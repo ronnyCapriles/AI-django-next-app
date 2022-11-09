@@ -1,0 +1,1 @@
+# AI-django-next-app
