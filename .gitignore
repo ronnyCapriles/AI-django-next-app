@@ -1,0 +1,24 @@
+
+## Django ignore files and dirs
+# Data base
+*.sqlite3
+
+# Env
+env/
+
+# Cache
+__pycache__/
+
+
+## Next ignore files and dirs
+# Modules
+node_modules/
+
+# Next build dir
+.next/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
