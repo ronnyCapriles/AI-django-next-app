@@ -9,6 +9,10 @@ env/
 # Cache
 __pycache__/
 
+# Only for Development avoid migrations conflicts
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
 
 ## Next ignore files and dirs
 # Modules
