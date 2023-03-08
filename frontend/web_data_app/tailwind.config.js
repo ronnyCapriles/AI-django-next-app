@@ -9,10 +9,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontSize: {
-      size1: "3.052rem",
+    
+    extend: {
+        boxShadow: {
+            'logo': '0px 0px 0px 5px #CCC',
+        },
+        colors: {
+            'gris-descripcion': '#CCC',
+          },
     },
-    extend: {},
   },
   plugins: [],
 }

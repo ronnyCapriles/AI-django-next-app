@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 
 export default function Banner (props: any) {
-    const LogoBanner = require ('../public/BannerFut.jpg')
+    const LogoBanner = require ('../public/BannerComida.jpg')
     return (
-        <div className="w-full h-50 bg-sky-300">
+        <div className="w-full h-50 bg-white">
            <Image src={LogoBanner} alt="BannerPrueba" />
         </div>
     )
