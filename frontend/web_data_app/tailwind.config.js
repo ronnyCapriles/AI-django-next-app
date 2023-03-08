@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -9,7 +12,6 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    
     extend: {
         boxShadow: {
             'logo': '0px 0px 0px 5px #CCC',
@@ -18,6 +20,10 @@ module.exports = {
         colors: {
             'gris-descripcion': '#CCC',
           },
+        fontFamily: {
+          montserrat: ['MONTSERRAT', ...defaultTheme.fontFamily.sans],
+          roboto: ['ROBOTO', ...defaultTheme.fontFamily.sans],
+        }
     },
   },
   plugins: [],
