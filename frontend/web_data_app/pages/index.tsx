@@ -1,6 +1,7 @@
 import Banner from '../components/Banner'
 import ContacButton from '../components/ContacButton'
 import Description from '../components/Description'
+import Location from '../components/Location'
 import Logo from '../components/Logo'
 import Name from '../components/Name'
 
@@ -27,6 +28,10 @@ export default function Home() {
             <div  className='absolute top-14 left-4 py-2 pr-20' >
                 <Description/>
             </div>   
+
+            <div  className='absolute top-20 left-4 pt-4 ' >
+                <Location/>
+            </div>
         </div>
         
     </div>
