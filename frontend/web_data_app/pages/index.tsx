@@ -1,6 +1,7 @@
 import Banner from '../components/Banner'
 import ContacButton from '../components/ContacButton'
 import Description from '../components/Description'
+import Location from '../components/Location'
 import Logo from '../components/Logo'
 import Name from '../components/Name'
 import ProductCard from '../components/ProductCard'
@@ -28,6 +29,10 @@ export default function Home() {
             <div  className='' >
                 <Description/>
             </div>   
+
+            <div  className='absolute top-20 left-4 pt-4 ' >
+                <Location/>
+            </div>
         </div>
         
         <div className='w-full h-auto flex flex-col items-center justify-center px-2'>
