@@ -13,12 +13,12 @@ export default function Home() {
             <Banner/>
         </div>
       
-        <div className=' flex absolute top-7 left-5'>
+        <div className=' flex absolute top-10 left-5'>
             <Logo />
         </div>
 
         <div className='w-full h-full flex flex-col px-2'>
-            <div className='w-full h-auto flex flex-row items-center justify-between my-1'>
+            <div className='w-full h-auto flex flex-row items-center justify-between mt-4 mb-2'>
                 <div className='w-45%'>
                     <Name/>    
                 </div>
@@ -26,11 +26,11 @@ export default function Home() {
                     <ContacButton/>   
                 </div>
             </div>
-            <div  className='' >
+            <div  className='mr-8' >
                 <Description/>
             </div>   
 
-            <div  className='absolute top-20 left-4 pt-4 ' >
+            <div  className=' flex flex-row py-2 ' >
                 <Location/>
             </div>
         </div>
