@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function ProductCard (props: any) {
     const Product = require ('../public/pizza2.jpg')
     return(
-        <div className="my-2 px-2 w-full h-64 rounded-lg bg-white border border-slate-200 flex flex-row justify-">
-            <div className="flex flex-col items-center justify-center w-1/4 h-full">
+        <div className="my-2 px-2 w-full h-auto md:h-64 rounded-lg bg-white border border-slate-200 flex flex-col items-center md:flex-row md:justify-between">
+            <div className="w-full md:w-1/4 flex flex-col items-center justify-center h-full">
             <Image src={Product} alt="product" className="h-full w-full object-contain"/>
             </div>
-            <div className="w-3/4 overflow-y-scroll px-2 flex flex-col justify-around">
-                <h1 className="bg-sky-300 w-full 1/6 font-roboto text-lg text-center align-middle"> Titulo de comida</h1>
+            <div className="w-full md:w-3/4 h-auto px-2 flex flex-col justify-center">
+                <h1 className="bg-sky-300 w-full h-1/6 font-roboto text-lg text-center align-middle"> Titulo de comida</h1>
                 <h1 className="w-full h-2/3 text-justify font-montserrat text-xs">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt justo eget tortor mattis, non laoreet turpis ultricies. Aliquam condimentum interdum lacinia. Sed at ante at tortor tempus finibus eget ac justo. Curabitur sagittis, turpis lacinia ullamcorper consequat, lacus turpis consequat felis, ultrices ornare lacus urna et diam. Nullam imperdiet neque eu sollicitudin faucibus. Vivamus sollicitudin porttitor est, id sagittis metus. Mauris imperdiet odio sit amet tellus gravida, ac aliquet arcu ornare. Nunc turpis turpis, maximus a felis sed, eleifend pellentesque diam. Donec semper consectetur eros, non placerat ipsum. Phasellus elit nibh, bibendum nec tortor ut, dignissim bibendum ante. Mauris viverra arcu augue. Fusce finibus mi nisl, ac hendrerit eros rhoncus vel.
                     Vivamus semper pellentesque ornare. Vestibulum interdum molestie libero, id viverra erat vestibulum sollicitudin. Aenean erat sapien, ultrices eget purus ut, viverra rhoncus sem. Integer et arcu id ipsum tincidunt aliquam. Morbi porta eleifend velit, sed porta risus dignissim ut. Morbi vehicula nisi id magna rutrum consectetur. Nulla pulvinar sapien lectus, iaculis elementum est dictum vitae. Phasellus ac pretium odio, sed maximus orci. Praesent porttitor mi sit amet condimentum cursus. Sed et volutpat ipsum. Praesent viverra pharetra nunc quis dignissim. Nunc eu felis ut dolor dapibus volutpat et eget erat. Aenean et dui eu lacus gravida elementum. Sed vitae ex posuere, viverra lectus non, fringilla lectus.
@@ -21,7 +21,9 @@ export default function ProductCard (props: any) {
                     Nulla sed nisl pellentesque, faucibus diam ut, hendrerit tellus. In sed nisl at velit lacinia efficitur eget vel odio. Fusce dolor enim, elementum eu nibh a, mollis suscipit sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mattis elit vel condimentum sodales. Sed ullamcorper augue massa, id placerat nunc interdum ut. Sed accumsan sollicitudin tellus, eget ornare tortor consectetur non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc porta feugiat finibus. Suspendisse non elit vel purus commodo dictum. Donec id sapien rhoncus dui blandit ullamcorper at ac lectus. Morbi eget elit in leo vehicula porta non venenatis velit. Duis iaculis lacus vitae nulla varius pharetra. Donec id lorem vitae tortor imperdiet elementum id sit amet augue.
                     Suspendisse potenti. Maecenas sollicitudin sit amet risus non accumsan. Fusce quis dui placerat, pretium orci at, elementum urna. Curabitur egestas consequat quam sed sagittis. Proin at enim eget quam fermentum luctus quis dapibus justo. Sed dui tortor, interdum sed gravida at, consequat eget nisl. Morbi volutpat, lorem nec ullamcorper consectetur, leo urna consectetur ligula, et varius neque risus pulvinar diam. Cras quis fringilla metus. Cras placerat non lorem at dignissim. Etiam lacinia et magna in congue. Integer in luctus turpis, eget accumsan purus. Aliquam vel egestas diam. Integer vehicula vel dolor sed posuere. Quisque posuere magna ipsum, id consequat nulla maximus eu. Vivamus imperdiet ipsum purus, vitae accumsan ligula lacinia non. Donec tempor felis tortor, nec pulvinar nulla varius in.
                 </h1>
-                <button type="button"  className="">icon add</button>
+                <div className="w-full h-1/6 items-center">
+                    <button type="button"  >icon add</button>
+                </div>
                     
             </div>
         </div>
