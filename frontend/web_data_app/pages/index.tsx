@@ -5,6 +5,7 @@ import Location from '../components/Location'
 import Logo from '../components/Logo'
 import Name from '../components/Name'
 import ProductCard from '../components/ProductCard'
+import SocialMedia from '../components/SocialMedia'
 
 export default function Home() {
   return (
@@ -22,7 +23,10 @@ export default function Home() {
                 <div className='w-45%'>
                     <Name/>    
                 </div>
-                <div className='w-45%'>
+                <div className='w-45% flex flex-col'>
+                
+            <SocialMedia />
+        
                     <ContacButton/>   
                 </div>
             </div>
