@@ -5,6 +5,7 @@ import Location from '../components/Location'
 import Logo from '../components/Logo'
 import Name from '../components/Name'
 import ProductCard from '../components/ProductCard'
+import SwrProve from '../components/SwrProve'
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
         <div className='w-full h-full flex flex-col px-2'>
             <div className='w-full h-auto flex flex-row items-center justify-between mt-4 mb-2'>
                 <div className='w-45%'>
-                    <Name/>    
+                    <Name/>   
+                    <SwrProve/> 
                 </div>
                 <div className='w-45%'>
                     <ContacButton/>   
