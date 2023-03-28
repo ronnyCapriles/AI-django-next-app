@@ -15,7 +15,7 @@ const fetcher = async (url:any) => {
 
 //Funcion para put
 
-const updateData = async (url:any, data:any) => {
+const updateData1 = async (url:any, data:any) => {
     try {
         const response = await axios.put(url, data);
         return response.data;
@@ -24,6 +24,7 @@ const updateData = async (url:any, data:any) => {
     }
 }
 
+//esta funcion hace el get
 export default function SwrProve () {
   const { data, error, isLoading } = useSWR('https://jsonplaceholder.typicode.com/posts/1', fetcher)
   if (error) return <div>failed to load</div>
