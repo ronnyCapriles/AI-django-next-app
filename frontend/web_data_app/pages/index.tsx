@@ -18,11 +18,10 @@ export default function Home() {
             <Logo />
         </div>
 
-        <div className='w-full h-full flex flex-col px-2'>
+        <div className='w-full h-full flex flex-col px-2 border border-b-1 '>
             <div className='w-full h-auto flex flex-row items-center justify-between mt-4 mb-2'>
                 <div className='w-45%'>
                     <Name/>   
-                    <SwrProve/> 
                 </div>
                 <div className='w-45% flex flex-col'>
                 

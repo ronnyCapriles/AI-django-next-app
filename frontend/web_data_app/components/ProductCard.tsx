@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function ProductCard (props: any) {
     const Product = require ('../public/pizza2.jpg')
     return(
-        <div className="w-full flex flex-row items-center justify-around">
+        <div className="w-full flex flex-row items-center justify-around my-1 border border-slate-200 shadow-lg rounded-xl">
             <div className="w-5/12 md:w-1/4 flex flex-col items-center justify-center h-full">
-            <Image src={Product} alt="product" className="h-full w-full object-contain"/>
+            <Image src={Product} alt="product" className="h-full w-full object-contain rounded-tl-xl rounded-br-xl"/>
             </div>
             <div className="w-7/12 md:w-3/4 h-64 px-2 flex flex-col justify-center">
                 <h1 className="w-full h-1/6 font-roboto text-lg text-center text-lg align-middle"> Titulo de comida</h1>
